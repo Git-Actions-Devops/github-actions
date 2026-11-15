@@ -14,11 +14,11 @@ jobs:
       - name: job-1
         run: echo "Hello, I am from Job-1"
   
-  Job-1:
-    needs: Job-2
+  Job-3:
+    needs: Job-3
     runs-on: ubuntu-latest
     steps:
-      - name: job-1
+      - name: job-3
         run: echo "Hello, I am from Job-1"
 
   Job-4:
